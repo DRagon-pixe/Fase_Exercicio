@@ -11,12 +11,14 @@ public class Exercicio_03 : MonoBehaviour
      
      */
 
-    [SerializeField] bool playerVivo;
-    [SerializeField] bool powerUp;
-    //double vidaPlayer = 100;
+    //[SerializeField] bool playerVivo;
+    //[SerializeField] bool powerUp;
+    ////double vidaPlayer = 100;
 
-    int vidaPlayerInicial = 100;
-    double vidaPlayerAtual = 100;
+    //int vidaPlayerInicial = 100;
+    //double vidaPlayerAtual = 100;
+
+        [SerializeField] int estadoVilao = 1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,14 +33,35 @@ public class Exercicio_03 : MonoBehaviour
         //    print("Game Over");
         //}
 
-        if(vidaPlayerAtual <= 0 && powerUp == true)
+        //if(vidaPlayerAtual <= 0 && powerUp == true)
+        //{
+        //    vidaPlayerAtual = vidaPlayerInicial * 0.5;
+        //    print("Ainda náo, vida atual " + vidaPlayerAtual);
+        //}
+        //else
+        //{
+        //    print("Game Over");
+        //}
+
+
+        switch (estadoVilao)
         {
-            vidaPlayerAtual = vidaPlayerInicial * 0.5;
-            print("Ainda náo, vida atual " + vidaPlayerAtual);
-        }
-        else
-        {
-            print("Game Over");
+            case 1:
+                print("Vilão atacando");
+                if (true)
+                {
+                    print("Dano");
+                }
+                break;
+            case 2:
+                print("Vilão defendendo");
+                break;
+            case 3:
+                print("Vilão tomando um coro");
+                break;
+            default:
+                print("Valor não identificado");
+                break;
         }
     }
 
