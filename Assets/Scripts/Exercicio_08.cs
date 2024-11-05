@@ -13,23 +13,19 @@ using UnityEngine;
 public class Exercicio_08 : MonoBehaviour
 {
 
-    int hora = 0;
-    int dia = 0;
+    [SerializeField]int hora;
+    [SerializeField] int dia;
+    [SerializeField] float segundos;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(hora < 24)
-        {  
-            hora++; 
-        }
-        else
-
+        segundos += Time.deltaTime;
     }
 }

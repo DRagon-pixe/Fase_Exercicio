@@ -33,6 +33,10 @@ public class Exercicio_09 : MonoBehaviour
         {
             print("um empate emocionante");
         }
+        else if (timeA > 100 || timeB > 100)
+        {
+            print("Alguém está roubando");
+        }
     }
 
     // Update is called once per frame
