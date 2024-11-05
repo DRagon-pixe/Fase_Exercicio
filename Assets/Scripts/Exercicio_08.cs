@@ -27,5 +27,17 @@ public class Exercicio_08 : MonoBehaviour
     void Update()
     {
         segundos += Time.deltaTime;
+
+        if (segundos >= 10)
+        {
+            hora += 1;
+            segundos -= 10;
+        }
+        else if (hora == 24)
+        {
+            dia += 1;
+            print("Se passou um dia");
+            hora -= 24;
+        }
     }
 }
