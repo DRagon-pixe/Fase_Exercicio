@@ -29,13 +29,9 @@ public class Exercicio_09 : MonoBehaviour
         {
             print("empate");
         }
-        else if(timeA + 3 == timeB + 3)
+        else if(timeA > 3 == timeB > 3)
         {
             print("um empate emocionante");
-        }
-        else if (timeA > 100 || timeB > 100)
-        {
-            print("Alguém está roubando");
         }
     }
 

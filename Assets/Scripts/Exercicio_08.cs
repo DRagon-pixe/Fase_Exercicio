@@ -13,7 +13,7 @@ using UnityEngine;
 public class Exercicio_08 : MonoBehaviour
 {
 
-    [SerializeField]int hora;
+    [SerializeField] int hora;
     [SerializeField] int dia;
     [SerializeField] float segundos;
 
