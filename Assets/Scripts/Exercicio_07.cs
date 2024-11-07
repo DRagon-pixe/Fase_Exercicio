@@ -13,11 +13,20 @@ public class Exercicio_07 : MonoBehaviour
 {
 
     [SerializeField] int numeroFaces = 100;
+    [SerializeField] int faces;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        print(Random.Range(4, numeroFaces));
+        //print(Random.Range(4, numeroFaces));
+        if (numeroFaces == 0)
+        {
+            print("O número de faces do dado não pode ser:" + faces);
+        }
+        else
+        {
+            print(Random.Range(1, numeroFaces));
+        }
     }
 
     // Update is called once per frame

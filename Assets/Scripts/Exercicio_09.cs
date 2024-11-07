@@ -11,12 +11,16 @@ using UnityEngine;
 public class Exercicio_09 : MonoBehaviour
 {
 
-    [SerializeField] int timeA = 9;
-    [SerializeField] int timeB = 9;
+    [SerializeField] int timeA;
+    [SerializeField] int timeB;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        timeA = Random.Range(1, 9);
+        timeB = Random.Range(1, 9);
+
+
         if (timeA > timeB)
         {
             print("vitória do time A");

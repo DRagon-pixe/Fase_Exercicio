@@ -18,8 +18,8 @@ public class Exercicio_10 : MonoBehaviour
         switch (inventario)
         {
             case 1:
-                print("moedas");
-                print("Podem ser usadas para compras 'coisas'");
+                print("moeda");
+                print("Pode ser usada para comprar 'coisas'");
                 break;
             case 2:
                 print("poções");
@@ -30,7 +30,7 @@ public class Exercicio_10 : MonoBehaviour
                 print("Podem ser usados para se fortalecer");
                 break;
             default:
-                print("Item inexistente");
+                print("Item desconhecido");
                 break;
         }
     }

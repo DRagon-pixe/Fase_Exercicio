@@ -4726,6 +4726,10 @@ GameObject:
   - component: {fileID: 468361447}
   - component: {fileID: 468361448}
   - component: {fileID: 468361449}
+  - component: {fileID: 468361450}
+  - component: {fileID: 468361451}
+  - component: {fileID: 468361452}
+  - component: {fileID: 468361453}
   m_Layer: 0
   m_Name: Idle (32x32)_0
   m_TagString: Untagged
@@ -4890,6 +4894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5945ebe72e039247af7e55d65db1a05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vidaJogador: 100
 --- !u!114 &468361449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4902,6 +4907,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6443d24f71f359440bf75cd7c12ef5ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  powerUp: 0
+--- !u!114 &468361450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468361442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0562ac5a02d7ec4daabe0e09cda0117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeA: 2
+  timeB: 2
+--- !u!114 &468361451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468361442}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66dd2e13417bf4842b082b09c30afa5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventario: 7
+--- !u!114 &468361452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468361442}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c4a1f69f26c8548bef230e5fdbef92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  estadoConversa: 3
+--- !u!114 &468361453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468361442}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c100deb47da7f0f47a059dded55dda88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hora: 0
+  dia: 0
+  segundos: 0
 --- !u!1 &502101384
 GameObject:
   m_ObjectHideFlags: 0
@@ -5050,7 +5111,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.74
+  orthographic size: 5.9507484
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -5075,7 +5136,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46, y: 0.02, z: -10}
+  m_LocalPosition: {x: 4.97, y: 2.23, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

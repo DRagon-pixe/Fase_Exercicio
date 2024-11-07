@@ -37,6 +37,7 @@ public class Exercicio_08 : MonoBehaviour
         {
             dia += 1;
             print("Se passou um dia");
+            print(dia);
             hora -= 24;
         }
     }
