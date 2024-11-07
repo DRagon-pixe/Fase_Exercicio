@@ -2,6 +2,14 @@ using UnityEngine;
 
 public class Geral : MonoBehaviour
 {
+    /*
+        Operadores Lógicos
+
+        && (E / AAND)
+        || (OU / OR)
+        ! (NÃO / NOT)
+     
+     */
 
     //[SerializeField] int vidaJogdor = 100;*
     //float velocidadeCarro = 125.5f;*
