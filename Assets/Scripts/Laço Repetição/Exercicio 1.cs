@@ -11,8 +11,10 @@ public class Exercicio1 : MonoBehaviour
         for(int var = 5; var <= 5; var--)
         {
             if (var == 0)
+            { break; }
+            if (var >= 0)
             {
-                break;
+                print(var);
             }
         }
     }
