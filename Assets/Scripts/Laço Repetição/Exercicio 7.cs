@@ -25,9 +25,10 @@ public class Exercicio7 : MonoBehaviour
         nums.Add(18);
         nums.Add(7);
         nums.Add(67);
+        nums.Add(134);
 
         nums.Sort();
-        print(nums[10]);
+        print(nums[11]);
     }
 
     // Update is called once per frame

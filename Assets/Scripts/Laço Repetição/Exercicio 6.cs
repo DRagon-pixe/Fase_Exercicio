@@ -12,7 +12,7 @@ public class Exercicio6 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        for (int nums = 0; nums <= 20; nums++)
+        for (int nums = 0; nums <= 10000; nums++)
         {
             if (nums % 3 == 0 && nums % 5 == 0)
             {
