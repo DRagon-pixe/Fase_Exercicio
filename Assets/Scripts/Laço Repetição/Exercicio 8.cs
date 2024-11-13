@@ -6,7 +6,7 @@ public class Exercicio8 : MonoBehaviour
     //string usando um loop for.
 
     string nome = "Arthur";
-    string inverter;
+    string inverter = "";
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
